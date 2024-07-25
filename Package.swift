@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
  name: "UI",
  platforms: [
-  .macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .visionOS(.v1), .watchOS(.v6)
+  .macOS(.v11), .iOS(.v13), .tvOS(.v13), .visionOS(.v1), .watchOS(.v6)
  ],
  products: [.library(name: "UI", targets: ["UI"])],
  dependencies: [
