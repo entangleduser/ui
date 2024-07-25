@@ -3,7 +3,9 @@ import PackageDescription
 
 let package = Package(
  name: "UI",
- platforms: [.macOS(.v14)],
+ platforms: [
+  .macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .visionOS(.v1), .watchOS(.v6)
+ ],
  products: [.library(name: "UI", targets: ["UI"])],
  dependencies: [
   .package(url: "https://github.com/acrlc/tokamak.git", branch: "main")
